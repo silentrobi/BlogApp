@@ -1,0 +1,43 @@
+version: "3.7"
+
+services:
+  blog.apigateway:
+    build: ../../Blog.ApiGateway.Ocelot
+    container_name: blog.apigateway
+    restart: unless-stopped
+    ports:
+      - 5000:80
+    networks:
+      - blogapp
+
+  blog.service.identity:
+    build: ../../Blog.Service.Identity
+    container_name: blog.service.identity
+    restart: unless-stopped
+    ports:
+      - 5010:80
+    networks:
+      - blogapp
+
+  blog.service.blogapi:
+    build: ../../Blog.Service.BlogApi
+    container_name: blog.service.blogapi
+    restart: unless-stopped
+    ports:
+      - 5020:80
+    networks:
+      - blogapp
+
+  blog.service.notification:
+    build: ../../Blog.Service.Notification
+    container_name: blog.service.notification
+    restart: unless-stopped
+    ports:
+      - 5030:80
+    networks:
+      - blogapp
+
+networks:
+  blogapp:
+    external:
+      name: blogapp
