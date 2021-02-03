@@ -1,5 +1,5 @@
 # Blog backend application
-Blog backend application is developed using **micro service** architecture. The project has four micro services, these are **ApiGatway**, **Identity Server**, **BlogApi Server** and **Notification server**.
+Blog backend application is developed using **micro service** architecture. The project has four micro services, these are **Api Gateway**, **Identity Server**, **BlogApi Server** and **Notification Server**.
 
 ## Backend architecture
 ![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/xn4xul2vfqd3ok8l0a4g.jpg)
@@ -13,10 +13,10 @@ Each micro service has its own repository. You can reach the repositories from h
 
 The `BlogApp` repository has two main folders, one is `composes` and another is `scripts`.
 - `composes` folder has `docker-compose` files for micro services and common services like postgresql, rabbitmq etc.
-- `scripts` folder has git-clone.sh that clones above repositories and compile.sh.
+- `scripts` folder has `git-clone.sh` that clones above repositories and `compile.sh`.
 
 ## How to start the project?
-- Run the compile.sh script file under the folder `BlogApp/scripts`.  This will clone all the repositories, build and run them as docker containers. This will also build and run common services defined in `infrastructure.yml` file under `BlogApp/composes` folder .
+- Run the `compile.sh` script file under the folder `BlogApp/scripts`.  This will clone all the repositories, build and run them as docker containers. This will also build and run common services defined in `infrastructure.yml` file under `BlogApp/composes` folder .
 - Visit `http://localhost:5000` from your browser and you will get `hello world` message.
 
 ## Indentity Server Endpoints
@@ -46,5 +46,5 @@ curl --location --request POST 'http://localhost:5000/api/identity/connect/token
 **Test Token Verification:**
 ```
 curl --location --request GET 'http://localhost:5000/api/identity/api/v1/test' \
---header 'Authorization: Bearer xxxxxxxxxxxxx'
+--header 'Authorization: Bearer xxxxxxxxxxxxxxxxxxx......'
 ```
