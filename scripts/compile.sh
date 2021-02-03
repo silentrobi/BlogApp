@@ -5,11 +5,11 @@ source git-clone.sh
 
 cd $pwd
 
+echo $pwd
+
 # run infrastructure.yml file
 docker-compose -f ../composes/infrastructure.yml up -d
 
 # run services-local.yml file
 
-docker-compose -f ../composes/services-local.yml up
-
-read junk
+docker-compose -f ../composes/services-local.yml up -d

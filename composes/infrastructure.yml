@@ -46,7 +46,6 @@ services:
 
 networks:
   blogapp:
-    external:
       name: blogapp
 
 volumes:

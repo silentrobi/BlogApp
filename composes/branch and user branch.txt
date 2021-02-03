@@ -1,0 +1,6 @@
+INSERT INTO public."Branch"(
+	"Id", "RecordStatus", "CreatedDate", "CreatedByUserGuid", "UpdatedDate", "UpdatedByUserGuid", "Name", "AccountId")
+	VALUES ('a6af3358-0c6c-412e-9325-af4e18b9b569', 1, now(), 'aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa', now(), 'aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa', 'testbranch', '077ce15f-ec2f-4575-9803-150036c8d14c');
+
+INSERT INTO public."UserBranch"("UserId", "RecordStatus", "CreatedDate", "CreatedByUserGuid", "UpdatedDate", "UpdatedByUserGuid", "BranchId")
+	VALUES ('ee4ab785-1f3c-495f-b552-88d5523ce50b', 1, now(), 'aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa', now(), 'aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa', 'a6af3358-0c6c-412e-9325-af4e18b9b569');

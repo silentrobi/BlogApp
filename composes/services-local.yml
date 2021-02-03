@@ -7,8 +7,6 @@ services:
     restart: unless-stopped
     ports:
       - 5000:80
-    networks:
-      - blogapp
 
   blog.service.identity:
     build: ../../Blog.Service.Identity
@@ -16,8 +14,6 @@ services:
     restart: unless-stopped
     ports:
       - 5010:80
-    networks:
-      - blogapp
 
   blog.service.blogapi:
     build: ../../Blog.Service.BlogApi
@@ -25,8 +21,6 @@ services:
     restart: unless-stopped
     ports:
       - 5020:80
-    networks:
-      - blogapp
 
   blog.service.notification:
     build: ../../Blog.Service.Notification
@@ -34,10 +28,8 @@ services:
     restart: unless-stopped
     ports:
       - 5030:80
-    networks:
-      - blogapp
 
 networks:
-  blogapp:
+  default:
     external:
       name: blogapp
