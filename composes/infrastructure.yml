@@ -1,8 +1,8 @@
 version: "3.7"
 
 services:
-  blog.service.identity.postgres:
-    container_name: blog.service.identity.postgres
+  blog.service.postgres:
+    container_name: blog.service.postgres
     image: postgres
     environment:
       POSTGRES_USER: ${POSTGRES_USER:-root}

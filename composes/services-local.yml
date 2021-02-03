@@ -26,6 +26,8 @@ services:
     build: ../../Blog.Service.Notification
     container_name: blog.service.notification
     restart: unless-stopped
+    environment:
+      - EMAIL_PASSWORD
     ports:
       - 5030:80
 

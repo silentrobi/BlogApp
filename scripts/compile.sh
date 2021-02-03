@@ -4,8 +4,9 @@ pwd=`pwd`
 source git-clone.sh
 
 cd $pwd
-
 echo $pwd
+
+EMAIL_PASSWORD=`printenv EMAIL_PASSWORD`
 
 # run infrastructure.yml file
 docker-compose -f ../composes/infrastructure.yml up -d
