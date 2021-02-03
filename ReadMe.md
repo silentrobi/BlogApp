@@ -20,7 +20,7 @@ The `BlogApp` repository has two main folders, one is `composes` and another is 
 - Visit `http://localhost:5000` from your browser and you will get `hello world` message.
 
 **Important Notes** 
-> Before you run `compile.sh`, you have make some changes on **Blog.Service.Notification** project. Go to `Blog.Service.Notification/Blog.Service.Notification.Application/appsettings.json` file. Change `EmailConfiguration` setting to your own setting. Also create an environment variable named `EMAIL_PASSWORD` where you can store your email password. 
+Before you run `compile.sh`, you have make some changes on **Blog.Service.Notification** project. Go to `Blog.Service.Notification/Blog.Service.Notification.Application/appsettings.json` file. Change `EmailConfiguration` setting to your own setting. Also create an environment variable named `EMAIL_PASSWORD` where you can store your email password.
 
 ## Indentity Server Endpoints
 **Register New User:** 
