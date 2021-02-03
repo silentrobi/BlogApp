@@ -22,7 +22,7 @@ The `BlogApp` repository has two main folders, one is `composes` and another is 
 ## **Important Notes** 
 Before you run `compile.sh`, you have make some changes on **Blog.Service.Notification** project. Go to `Blog.Service.Notification/Blog.Service.Notification.Application/appsettings.json` file. Change `EmailConfiguration` setting to your own setting. Also create an environment variable named `EMAIL_PASSWORD` where you can store your email password.
 
-## Indentity Server Endpoints
+## Identity Server Endpoints
 **Register New User:** 
 ```
 curl --location --request POST 'http://localhost:5000/api/identity/v1/users/register' \
