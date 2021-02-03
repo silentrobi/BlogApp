@@ -19,7 +19,7 @@ The `BlogApp` repository has two main folders, one is `composes` and another is 
 - Run the `compile.sh` script file under the folder `BlogApp/scripts`.  This will clone all the repositories, build and run them as docker containers. This will also build and run common services defined in `infrastructure.yml` file under `BlogApp/composes` folder .
 - Visit `http://localhost:5000` from your browser and you will get `hello world` message.
 
-**Important Notes** 
+## **Important Notes** 
 Before you run `compile.sh`, you have make some changes on **Blog.Service.Notification** project. Go to `Blog.Service.Notification/Blog.Service.Notification.Application/appsettings.json` file. Change `EmailConfiguration` setting to your own setting. Also create an environment variable named `EMAIL_PASSWORD` where you can store your email password.
 
 ## Indentity Server Endpoints
