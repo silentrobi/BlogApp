@@ -28,6 +28,8 @@ services:
     restart: unless-stopped
     environment:
       - EMAIL_PASSWORD
+      - EMAIL_NAME
+      - EMAIL_SERVER
     ports:
       - 5030:80
 
